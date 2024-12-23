@@ -1,0 +1,136 @@
+{
+    "name": "Wildsky",
+    "logo": {
+        "Type": "Logo",
+        "name": "wildsky_logo.png",
+        "description": "Logo of Wildsky featuring a starry night design"
+    },
+    "sections": [
+        {
+            "title": "Welcome to Wildsky",
+            "subtitle": "Protecting Our Dark Skies",
+            "name": "hero",
+            "label": "Home",
+            "content": "Explore the wonders of the night sky without the glare of artificial lights. Join us in preserving our dark skies for future generations.",
+            "order": 1,
+            "Type": "Hero",
+            "images": [
+                {
+                    "Type": "Hero",
+                    "name": "dark_sky_banner.jpg",
+                    "description": "A panoramic view of a starlit sky free from light pollution."
+                }
+            ]
+        },
+        {
+            "title": "About Wildsky",
+            "subtitle": "Our Mission & Vision",
+            "name": "about",
+            "label": "About",
+            "content": "At Wildsky, our mission is to safeguard the natural beauty of the night sky. Our vision is a world where everyone has access to the majesty of the heavens, and communities thrive economically and environmentally due to dark sky preservation.",
+            "order": 2,
+            "Type": "About",
+            "images": [
+                {
+                    "Type": "Background",
+                    "name": "mission_background.jpg",
+                    "description": "A serene setting depicting a clear, star-filled night sky."
+                }
+            ]
+        },
+        {
+            "title": "Our Services",
+            "subtitle": "",
+            "name": "services",
+            "label": "Services",
+            "content": "- **Dark Sky Compliance Consulting**: We guide businesses and municipalities in achieving dark sky-friendly regulations.\n- **Educational Workshops**: Learn about the importance of preserving night skies and how it benefits ecosystems.\n- **Community Engagement Programs**: Collaborate with local groups to promote dark sky awareness.\n- **Light Pollution Audits**: Assess and provide solutions to mitigate light pollution in your area.",
+            "order": 3,
+            "Type": "Services",
+            "images": [
+                {
+                    "Type": "Icon",
+                    "name": "consulting_icon.png",
+                    "description": "Icon for consulting services."
+                },
+                {
+                    "Type": "Icon",
+                    "name": "workshops_icon.png",
+                    "description": "Icon for educational workshops."
+                },
+                {
+                    "Type": "Icon",
+                    "name": "community_icon.png",
+                    "description": "Icon for community engagement."
+                },
+                {
+                    "Type": "Icon",
+                    "name": "audit_icon.png",
+                    "description": "Icon for light pollution audits."
+                }
+            ]
+        },
+        {
+            "title": "Benefits of Dark Skies",
+            "subtitle": "",
+            "name": "benefits",
+            "label": "Benefits",
+            "content": "### Environmental Benefits\n- Supports nocturnal wildlife by preserving natural night conditions.\n- Reduces energy consumption, leading to lower carbon footprints.\n\n### Economic Benefits\n- Boosts local tourism with attractions like stargazing festivals.\n- Increases property values as communities become desirable living locations.",
+            "order": 4,
+            "Type": "Gallery",
+            "images": [
+                {
+                    "Type": "Infographic",
+                    "name": "environmental_benefits.png",
+                    "description": "An infographic showcasing the environmental benefits of dark sky preservation."
+                },
+                {
+                    "Type": "Infographic",
+                    "name": "economic_benefits.png",
+                    "description": "An infographic detailing the economic advantages linked to dark skies."
+                }
+            ]
+        },
+        {
+            "title": "Dark Sky Regulations & Resources",
+            "subtitle": "",
+            "name": "resources",
+            "label": "Resources",
+            "content": "Learn about local and national regulations affecting light pollution. Access resources to help your community or organization in adopting dark sky-friendly practices. \n- **Guideline PDFs**\n- **Toolkits for Schools**\n- **Governmental Policies**",
+            "order": 5,
+            "Type": "FAQ",
+            "images": [
+                {
+                    "Type": "Icon",
+                    "name": "pdf_icon.png",
+                    "description": "An icon representing downloadable PDF resources."
+                },
+                {
+                    "Type": "Icon",
+                    "name": "toolkit_icon.png",
+                    "description": "An icon symbolizing educational toolkits available for schools."
+                },
+                {
+                    "Type": "Icon",
+                    "name": "government_icon.png",
+                    "description": "An icon for governmental policies related to dark sky initiatives."
+                }
+            ]
+        },
+        {
+            "title": "Get in Touch",
+            "subtitle": "We'd Love to Hear from You",
+            "name": "contact",
+            "label": "Contact",
+            "content": "Have questions or want to get involved? \n\n**Email:** info@wildsky.org  \n**Phone:** +123-456-7890  \n**Address:** 123 Starline Dr, Starlight City, USA\n\nFollow us on social media to stay updated!",
+            "order": 6,
+            "Type": "Contact",
+            "images": [
+                {
+                    "Type": "Map",
+                    "name": "office_map.png",
+                    "description": "A map showing the location of the Wildsky office."
+                }
+            ]
+        }
+    ]
+}

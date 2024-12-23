@@ -1,0 +1,54 @@
+{
+    "models": [
+        {
+            "classname": "DarkSkyRegulation",
+            "code": "class DarkSkyRegulation(Base):\n    \"\"\"description: Details regarding specific dark sky regulations.\"\"\"\n    __tablename__ = 'dark_sky_regulation'\n\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    name = Column(String)\n    description = Column(String)\n    effective_date = Column(Date)\n    expiration_date = Column(Date)",
+            "sqlite_create": "CREATE TABLE dark_sky_regulation (\nid INTEGER PRIMARY KEY AUTOINCREMENT,\nname TEXT,\ndescription TEXT,\neffective_date DATE,\nexpiration_date DATE\n);",
+            "description": "Table representing the dark sky regulations.",
+            "name": "dark_sky_regulation"
+        },
+        {
+            "classname": "Resource",
+            "code": "class Resource(Base):\n    \"\"\"description: Information regarding resources available for dark sky program.\"\"\"\n    __tablename__ = 'resource'\n\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    name = Column(String)\n    url = Column(String)\n    type = Column(String)\n    description = Column(String)",
+            "sqlite_create": "CREATE TABLE resource (\nid INTEGER PRIMARY KEY AUTOINCREMENT,\nname TEXT,\nurl TEXT,\ntype TEXT,\ndescription TEXT\n);",
+            "description": "Table holding various resources related to the dark sky program.",
+            "name": "resource"
+        },
+        {
+            "classname": "EnvironmentalBenefit",
+            "code": "class EnvironmentalBenefit(Base):\n    \"\"\"description: Details on the environmental benefits of the dark sky program.\"\"\"\n    __tablename__ = 'environmental_benefit'\n\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    benefit_description = Column(String)\n    observation_date = Column(Date)",
+            "sqlite_create": "CREATE TABLE environmental_benefit (\nid INTEGER PRIMARY KEY AUTOINCREMENT,\nbenefit_description TEXT,\nobservation_date DATE\n);",
+            "description": "Table describing various environmental benefits.",
+            "name": "environmental_benefit"
+        },
+        {
+            "classname": "EconomicBenefit",
+            "code": "class EconomicBenefit(Base):\n    \"\"\"description: Records the economic benefits of implementing dark sky policies.\"\"\"\n    __tablename__ = 'economic_benefit'\n\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    benefit_description = Column(String)\n    observation_date = Column(Date)",
+            "sqlite_create": "CREATE TABLE economic_benefit (\nid INTEGER PRIMARY KEY AUTOINCREMENT,\nbenefit_description TEXT,\nobservation_date DATE\n);",
+            "description": "Table tracking the economic benefits achieved through dark sky initiatives.",
+            "name": "economic_benefit"
+        }
+    ],
+    "rules": [],
+    "test_data": "System summary calculation for the impact of benefits from environmental and economic activities.",
+    "test_data_rows": [
+        {
+            "test_data_row_variable": "reg1",
+            "code": "reg1 = DarkSkyRegulation(id=1, name='Protect Night Sky', description='Regulate light pollution.', effective_date=date(2023, 1, 15), expiration_date=date(2030, 12, 31))"
+        },
+        {
+            "test_data_row_variable": "resource1",
+            "code": "resource1 = Resource(id=1, name='Sky Protection Guide', url='http://example.com/guide', type='Guide', description='Guide on how to minimize light pollution.')"
+        },
+        {
+            "test_data_row_variable": "env_ben1",
+            "code": "env_ben1 = EnvironmentalBenefit(id=1, benefit_description='Improved star visibility', observation_date=date(2023, 6, 1))"
+        },
+        {
+            "test_data_row_variable": "econ_ben1",
+            "code": "econ_ben1 = EconomicBenefit(id=1, benefit_description='Reduced energy consumption', observation_date=date(2023, 6, 1))"
+        }
+    ],
+    "test_data_sqlite": "INSERT INTO dark_sky_regulation (id, name, description, effective_date, expiration_date) VALUES\n(1, 'Protect Night Sky', 'Regulate light pollution.', '2023-01-15', '2030-12-31');\n\nINSERT INTO resource (id, name, url, type, description) VALUES\n(1, 'Sky Protection Guide', 'http://example.com/guide', 'Guide', 'Guide on how to minimize light pollution.');\n\nINSERT INTO environmental_benefit (id, benefit_description, observation_date) VALUES\n(1, 'Improved star visibility', '2023-06-01');\n\nINSERT INTO economic_benefit (id, benefit_description, observation_date) VALUES\n(1, 'Reduced energy consumption', '2023-06-01');",
+    "name": "dark_sky_wildsky"
+}

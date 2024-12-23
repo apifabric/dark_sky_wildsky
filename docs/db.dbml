@@ -1,0 +1,44 @@
+// Copy this text, paste to https://dbdiagram.io/d
+// Or, https://databasediagram.com/app
+// Or, view in VSCode with extension: "DBML Live Preview"
+
+Project DBML {
+  Note: '''
+DarkSkyRegulation: Details regarding specific dark sky regulations.
+EconomicBenefit: Records the economic benefits of implementing dark sky policies.
+EnvironmentalBenefit: Details on the environmental benefits of the dark sky program.
+Resource: Information regarding resources available for dark sky program.
+'''
+}
+
+Table DarkSkyRegulation {
+    id INTEGER [primary key]
+    name VARCHAR 
+    description VARCHAR 
+    effective_date DATE 
+    expiration_date DATE 
+    }
+
+Table EconomicBenefit {
+    id INTEGER [primary key]
+    benefit_description VARCHAR 
+    observation_date DATE 
+    }
+
+Table EnvironmentalBenefit {
+    id INTEGER [primary key]
+    benefit_description VARCHAR 
+    observation_date DATE 
+    }
+
+Table Resource {
+    id INTEGER [primary key]
+    name VARCHAR 
+    url VARCHAR 
+    Type VARCHAR 
+    description VARCHAR 
+    }
+
+
+
+// Relationships
